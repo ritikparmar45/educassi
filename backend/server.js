@@ -21,6 +21,7 @@ app.use(express.json());
 
 // API Routes
 app.use('/api/auth', authRoutes);
+app.use('/_/backend/auth', authRoutes);
 
 // Base / Health-check Route
 app.get('/', (req, res) => {
